@@ -96,6 +96,20 @@ curl http://localhost:3000/api/v1/health
 3. Click Send
 4. You should receive a 200 OK response with the JSON body above
 
+### NFT Endpoints
+
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| GET | `/api/v1/nfts` | List NFTs (pagination, owner/collection/search filters) | Optional |
+| GET | `/api/v1/nfts/:id` | Get NFT by ID | Optional |
+| GET | `/api/v1/nfts/token/:tokenId` | Get NFT by token ID | Optional |
+| GET | `/api/v1/nfts/owner/:ownerId` | Get NFTs by owner | Optional |
+| GET | `/api/v1/nfts/collection/:collectionId` | Get NFTs by collection | Optional |
+| POST | `/api/v1/nfts` | Mint new NFT | Required |
+| PUT | `/api/v1/nfts/:id` | Update NFT metadata | Required |
+| DELETE | `/api/v1/nfts/:id` | Burn NFT (soft-delete) | Required |
+| GET | `/api/v1/nfts/:id/attributes` | Get NFT attributes | Optional |
+
 ## Project Structure
 
 ```

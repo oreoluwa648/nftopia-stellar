@@ -7,7 +7,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
-import { NftModule } from './nft/nft.module';
+import { NftModule } from './modules/nft/nft.module';
 import { AuctionModule } from './modules/auction/auction.module';
 import { ListingModule } from './modules/listing/listing.module';
 import { OrderModule } from './modules/order/order.module';
